@@ -1,0 +1,9 @@
+<h1><%= @round.village_name %></h1>
+<ul>
+  <% @round.players.each do |player| %>
+    <li><%= player.username %></li>
+  <% end %>
+</ul>
+<a href="http://localhost:3000/players/new">
+  <button type="button"> Join </button>
+</a>
