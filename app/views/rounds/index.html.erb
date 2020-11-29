@@ -1,0 +1,6 @@
+<h1>Hello World</h1>
+<ul>
+  <% @rounds.each do |round| %>
+    <li><a href=<%="/rounds/#{round.id}"%>><%= round.village_name %></a></li>
+  <% end %>
+</ul>

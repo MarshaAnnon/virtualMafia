@@ -1,0 +1,6 @@
+<h1> Hello World </h1>
+
+<%= form_for :round, :url => '/rounds' do |f| %>
+  Village Name: <%= f.text_field :village_name %><br />
+  <%= f.submit %>
+<% end %>
